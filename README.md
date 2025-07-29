@@ -2,7 +2,7 @@
 ## Summary
 This is a SharePoint Gallery redesign with multiple clickable tiles (buttons).
 
-![screenshot of the sample](./asset/screenshot.jpg)
+![screenshot of the sample](./asset/screenshot.jpg | width=500)
 
 ## View requirements
 
