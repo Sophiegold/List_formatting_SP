@@ -20,7 +20,7 @@ This is a SharePoint Gallery redesign with multiple clickable tiles (buttons).
 
 Solution|Author(s)
 --------|---------
-clickable_tiles.json | [Sophie Goldstein]([https://github.com/tecchan1107](https://github.com/Sophiegold)))
+[clickable_tiles.json]([https://github.com/Sophiegold/List_formatting_SP/blob/main/clickable_tiles.json])| [Sophie Goldstein]([https://github.com/tecchan1107](https://github.com/Sophiegold))
 
 ## Version history
 
