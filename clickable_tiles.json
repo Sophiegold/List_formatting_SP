@@ -8,22 +8,20 @@
   "hideSelection": true,
   "fillHorizontally": true,
   "formatter": {
-    "elmType": "div",
+    "elmType": "a",
     "attributes": {
+      "href": "[$Link]",
+      "target": "=if([$Link] == '', '', '_blank')",
       "class": "sp-card-container"
     },
+    "style": {
+      "display": "block",
+      "text-decoration": "none"
+    },
+    "customRowAction": {
+      "action": "defaultClick"
+    },
     "children": [
-      {
-        "elmType": "a",
-        "attributes": {
-          "href": "[$Link]",
-          "target": "=if([$Link] == '', '', '_blank')",
-          "class": "sp-card-defaultClickButton"
-        },
-        "customRowAction": {
-          "action": "defaultClick"
-        }
-      },
       {
         "elmType": "div",
         "attributes": {
@@ -59,7 +57,7 @@
                           "word-break": "break-word",
                           "left": "5%",
                           "right": "5%",
-                          "padding": " 5px",
+                          "padding": "5px",
                           "border-radius": "4px",
                           "font-weight": "600",
                           "font-size": "15px",
@@ -159,20 +157,13 @@
             },
             "children": [
               {
-                "elmType": "a",
-                "attributes": {
-                  "title": "[$Link]",
-                  "class": "ms-fontColor-neutralPrimary sp-card-content sp-card-urlContent sp-card-highlightedContent sp-card-keyboard-focusable",
-                  "href": "[$Link]",
-                  "target": "=if ([$Link] == '', '', '_blank')",
-                  "role": "heading",
-                  "aria-level": "3"
-                },
+                "elmType": "div",
                 "style": {
-                  "pointer-events": "=if ([$Link] == '', 'none', 'auto')",
-                  "text-decoration": "=if ([$Link] == '', 'none', 'auto')"
+                  "font-weight": "600",
+                  "font-size": "14px",
+                  "color": "#333"
                 },
-                "txtContent": "=if ([$Link.desc] == '', '–', [$Link.desc])"
+                "txtContent": "=if([$Link.desc] == '', '–', [$Link.desc])"
               }
             ]
           }
